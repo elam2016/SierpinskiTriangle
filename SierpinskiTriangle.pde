@@ -7,7 +7,7 @@ public void draw(){
 	sierpinski(0, screenSize - 1, screenSize - 1);
 }
 public void mouseDragged() { //optional
-
+	sierpinski(mouseX, mouseY, screenSize - mouseY);
 }
 public void sierpinski(int x, int y, int len) {
 	if(len > 20){
